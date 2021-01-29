@@ -1,0 +1,193 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&family=Schoolbell&display=swap');
+
+.row { max-width:1170px; 
+    margin:0 auto
+}
+/* {font-family: 'Rubik Mono One', sans-serif;} */
+body {font-family: 'Schoolbell', cursive;}
+
+header h1
+{ font-size: 40px; background: #07012b; color: #f5f2e6;
+text-align: center; padding: 30px 0px 20px; border-bottom:10px solid #f5f2e6 ;}
+
+
+header .nav {position: fixed; bottom: 0; left: 0; right: 0; background:  #07012b;  z-index: 999;}
+header .nav li {float: left; padding: 25px 15px; width: 20%; text-align: center;
+color: #f5f2e6;
+font-size: 18px;
+height: 100x; position: relative;}
+
+/* header .nav i {opacity: 0;transition: all 0.4s;}
+header .nav li:hover i  {opacity: 1; transition: all 0.4s;}
+header .nav li:hover  span {opacity: 0;transition: all 0.4s;} */
+header .nav .navzoom {display: none;}
+
+header .nav li:hover .navzoom {display: inline-block;}
+
+
+
+
+
+/* 공통클레스 */
+.sectionbg  {background:#eeecdf ;}
+
+.section1 {height: 100vh;}
+.section1,
+.section2,
+.section3,
+.section4,
+.section5{background: url(../img/line.png) no-repeat ; 
+    background-size: cover;
+     
+    height: 100vh;}
+h2 {font-size: 40px; display: inline-block;border-bottom: 14px solid rgba(255, 0, 0, 0.4);
+padding-left: 4px; margin-bottom: 30px; margin-top: 20px;  color: #07012b;}
+/* line-height: -1.5;}   */
+
+h2:nth-child(2) {width: 170px;} 
+
+h2:nth-child(4) {width: 160px;}  
+h2:nth-child(5) {width: 235px; }  
+
+
+
+/* home구역 */ 
+.mainslide  {max-width:900px;   margin:auto;  padding-top: 50px;}
+.slide_group {}
+.section1 .slide_group .slide1 { background:url(../img/slide1.jpg) no-repeat center;
+    background-size: cover;  height: 500px; border-radius: 18px; position: relative; }
+.section1 .slide_group .slide2 { background:url(../img/slide2.jpg) no-repeat center;
+        background-size: cover;  height: 500px;   border-radius: 18px; position: relative; }
+.section1 .slide_group .slide3 { background:url(../img/slide3.jpg) no-repeat center;
+    background-size: cover; height: 500px;  border-radius: 18px;  position: relative; }
+
+
+    .slide_group .text {position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);
+    font-size: 50px; color: #fff;}
+
+.slide_group {position: relative;}
+.slide_group .slick-arrow {position: absolute; top: 50%; transform: translateY(-50%);
+font-size: 50px; background: none; color:#07012b; z-index: 9999;}
+.slide_group .prev{left: -50px;}
+.slide_group .next{right: -50px;}
+.slide_group .slick-dots {
+    position: absolute; bottom: 0; left: 50%; transform: translate(-50%);}
+.slide_group .slick-dots li { float: left; margin-right: 20px;  }
+.slide_group .slick-dots li button {color: transparent; 
+    background: #fff; border-radius: 50%; width: 5px; height: 5px;}
+.slide_group .slick-dots li.slick-active button 
+{background: rgb(49, 46, 228);}
+
+
+     
+
+
+
+/* 어바웃미 구역 */
+.section2 .me {font-size: 200px; width: 250px; height: 250px; border: 15px solid #333; text-align: center; 
+color: #333;}
+
+
+
+
+
+
+
+
+
+/* 포트폴리오 구역 */
+/* #PORTFOLIO ul li {background: url(../img/EyeOnDesign_20170830_Magazine-Erotica-08-2.png);
+width: 200px; z-index: 999;} */
+#PORTFOLIO ul  {position: relative;} 
+#PORTFOLIO ul li {width: 22%; height: 250px; float: left; margin-right: 4%;
+    margin-bottom: 30px;   border-radius: 20px; box-shadow: 3px 3px 8px } 
+#PORTFOLIO ul li:hover {animation: pulse 0.5s both;}
+#PORTFOLIO ul li:nth-child(1) {background: url(../img/pofol1.png) no-repeat center;
+    background-size: cover;}
+    #PORTFOLIO ul li:nth-child(2) {background: url(../img/pofol2.png) no-repeat center;
+        background-size: cover;}
+    #PORTFOLIO ul li:nth-child(3) {background: url(../img/pofol3.png) no-repeat center;
+    background-size: cover;}
+    #PORTFOLIO ul li:nth-child(4) {background: url(../img/pofol4.png) no-repeat center;
+        background-size: cover;  margin-right: 0;}
+        #PORTFOLIO ul li:nth-child(5) {background: url(../img/pofol15.png) no-repeat center;
+            background-size: cover;}
+        #PORTFOLIO ul li:nth-child(6) {background: url(../img/pofol16.png) no-repeat center;
+    background-size: cover;}
+    #PORTFOLIO ul li:nth-child(7) {background: url(../img/pofol7.png) no-repeat center;
+        background-size: cover;}
+        #PORTFOLIO ul li:nth-child(8) {background: url(../img/pofol8.png) no-repeat center;
+            background-size: cover;    margin-right: 0;}
+          
+        
+    
+
+
+
+
+
+
+
+
+
+/* skills 구역 */
+
+
+
+#skills h2 >div {width: 500px; position: relative;}
+.skillcont > div {font-size: 20px; margin-bottom: 25px; line-height: 1.5;}
+/* #skills .score {position: absolute; left: 0; top: 50%;
+transform: translate(-50%); width: 500px;} */
+#skills .myscore {text-align: right; padding-right: 15px;}
+#skills .html .myscore {width: 0; background: rgb(147, 223, 72);
+ animation:htmlani 0.6s both ; }
+
+ #skills .skillcont {margin-top: 27px;}
+
+#skills .css .myscore {width: 50%; background: rgb(220, 231, 122);
+animation: cssani 0.6s both 0.3s;}
+#skills .script .myscore {width: 20%; background: rgb(74, 168, 105);
+animation: scriptani 0.6s both 0.6s;}
+#skills .jquery .myscore {width: 20%; background: rgb(74, 118, 168);
+animation: jqueryani 0.6s both 0.9s;}
+#skills .react .myscore {width: 20%; background: rgb(140, 95, 192);
+animation: reactani 0.6s both 1.2s;}
+#skills .illustration .myscore {width: 85%; background: rgb(241, 142, 216);
+animation: illustrationani 0.6s both 1.5s;}
+
+@keyframes htmlani {0%{width: 0%; opacity: 0;}
+                    100%{width: 60%; opacity: 1;}}
+@keyframes cssani {0%{width: 0%; opacity: 0;}
+                    100%{width: 50%; opacity: 1;}}
+@keyframes scriptani {0%{width: 0%; opacity: 0;}
+                    100%{width: 20%; opacity: 1;}}    
+@keyframes jqueryani {0%{width: 0%; opacity: 0;}
+                    100%{width: 20%; opacity: 1;}}                                   
+@keyframes reactani {0%{width: 0%; opacity: 0;}
+                    100%{width: 20%; opacity: 1;}}
+@keyframes illustrationani {0%{width: 0%; opacity: 0;}
+                    100%{width: 85%; opacity: 1;}}                      
+
+
+
+
+
+
+
+/* contact me 구역 */
+.section5 h2 
+.section5 form { margin: 50px auto 0;
+width: 75%; background: #f5f2e6; }
+.section5 form label {width: 130px;
+    display: inline-block; font-size: 23px; padding-left: 20px;}
+    
+.section5 form input { height: 20px; background: transparent; width: 200px;}
+.section5 form p {padding-bottom: 30px;}
+.section5 form #memo {
+    height: 150px; vertical-align: top;}
+.section5 button {padding: 8px 20px; font-size: 20px; font-family: 'Schoolbell', cursive;
+border-radius: 50%; background: transparent; border: 2px dotted   #07012b; margin-top: 50px; margin-right: 20px; } 
+.section5 button:hover {background: rgb(243, 197, 112);}
+.section5 button[type=reset]:hover {background: rgb(241, 130, 115);}

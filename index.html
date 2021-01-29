@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KIM JI HYE PORTFOLIO(RESUME)</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/slick.min.js"></script>
+
+
+</head>
+
+<body>
+    <div id="wrap">
+
+        <header>
+
+            <h1>MY DATA <i class="far fa-grin"></i></h1>
+            <nav class="nav">
+                <ul class="row cf">
+                    <li><a href="#"><span>HOME</span>
+                            <div class="navzoom">
+                                <i class="fas fa-home"></i></div>
+                        </a></li>
+
+                    <li><a href="#aboutme"><span>ABOUT ME</span>
+                            <div class="navzoom">
+                                <i class="fas fa-user-circle"></i></div>
+                        </a></li>
+
+                    <li><a href="#PORTFOLIO"><span>PORTFOLIO</span>
+                            <div class="navzoom">
+                                <i class="fas fa-book"></i></div>
+                        </a></li>
+
+                    <li><a href="#skills"><span>SKILLS</span>
+                            <div class="navzoom">
+                                <i class="fas fa-pencil-alt"></i></div>
+                        </a></li>
+
+                    <li><a href="#contact"><span>CONTACT ME</spa>
+                                <div class="navzoom">
+                                    <i class="fas fa-mobile-alt"></i></div></a></li>
+
+                </ul>
+            </nav>
+
+        </header>
+        <div class="sectionbg">
+            <section>
+                <div class="section1">
+         
+                    
+                    <div class="mainslide">
+                        <div class="slide_group">
+                            <div class=" slide1">
+                                <div class="text"><p>슬라이드예시1</p></div>
+                            </div>
+                            <div class="slide2">
+                                <div class="text"><p>슬라이드예시2</p></div>
+                            </div>
+                            <div class="slide3">
+                                <div class="text"><p>슬라이드예시3</p></div>
+                            </div>
+    
+                        </div>
+                    </div>
+                
+
+                </div>
+                <div class="section2" id="aboutme">
+                    <div class="row">
+
+                        <h2>ABOUT ME</h2>
+                        <div class="me"><i class="fas fa-user-astronaut"></i></div>
+                    </div>
+                </div>
+
+                <div class="section3" id="PORTFOLIO">
+                    <div class="row">
+                        <h2>PORTFOLIO</h2>
+                        <ul class="pofol">
+                            <li><a href="#none"></a></li>
+                            <li><a href="#none"></a></li>
+                            <li><a href="#none"></a></li>
+                            <li><a href="#none"></a></li>
+                            <li><a href="#none"></a></li>
+                            <li><a href="#none"></a></li>
+                            <li><a href="#none"></a></li>
+                            <li><a href="#none"></a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="section4" id="skills">
+                    <div class="row">
+                        <h2>SKILLS</h2>
+                        <div class="skillcont">
+                            <div class="html">
+                                <p>html</p>
+                                <div class="score">
+                                    <div class="myscore"><span>60%</span></div>
+                                </div>
+                            </div>
+
+                            <div class="css">
+                                <p>css</p>
+                                <div class="score">
+                                    <div class="myscore"><span>50%</span></div>
+                                </div>
+                            </div>
+
+                            <div class="script">
+                                <p>script</p>
+                                <div class="score">
+                                    <div class="myscore"><span>20%</span></div>
+                                </div>
+                            </div>
+
+                            <div class="jquery">
+                                <p>jquery</p>
+                                <div class="score">
+                                    <div class="myscore"><span>20%</span></div>
+                                </div>
+                            </div>
+
+                            <div class="react">
+                                <p>react</p>
+                                <div class="score">
+                                    <div class="myscore"><span>20%</span></div>
+                                </div>
+
+                            </div>
+
+                            <div class="illustration">
+                                <p>illustration</p>
+                                <div class="score">
+                                    <div class="myscore"><span>85%</span></div>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section5" id="contact">
+                    <div class="row">
+                        <h2>CONTACT ME</h2>
+                        <form action="#none" method="post">
+                            <p>
+                                <label for="name">name :</label>
+                                <input type="text" id="name" placeholder="Click and enter">
+                            </p>
+                            <p>
+                                <label for="sellphone">sell phone :</label>
+                                <input type="text" id="sellphone" placeholder="Click and enter">
+
+                            </p>
+                            <p>
+                                <label for="email">email :</label>
+                                <input type="text" id="email" placeholder="Click and enter">
+                            </p>
+                            <p>
+                                <label for="memo">memo :</label>
+                                <textarea id="memo"></textarea>
+                            </p>
+                            <p>
+                                <label for="file">file :</label>
+                                <input type="file" id="file">
+                            </p>
+                            <p>
+                                <button type="reset">reset</button>
+                                <button type="submit">send</button>
+                            </p>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <footer></footer>
+
+    </div>
+
+
+
+    <script>
+        $(".section1 .slide_group").slick({
+          autoplay: true, // 자동재생
+          autoplaySpeed: 3000, // 간격시간
+          dots: true, // 동그라미버튼
+          pauseOnFocus: false, // 동그라미번호버튼 클릭시 자동실행 멈춤여부
+          prevArrow: '<button class="prev"><i class="fas fa-angle-left"></i></button>',
+          nextArrow: '<button class="next"><i class="fas fa-angle-right"></i></button>',
+        })
+    </script>
+
+
+
+</body>
+
+</html>
