@@ -18,6 +18,8 @@ header .nav li {float: left; padding: 25px 15px; width: 20%; text-align: center;
 color: #f5f2e6;
 font-size: 18px;
 height: 100x; position: relative;}
+header .nav li.on {color: rgb(255, 251, 0);}
+
 
 /* header .nav i {opacity: 0;transition: all 0.4s;}
 header .nav li:hover i  {opacity: 1; transition: all 0.4s;}
