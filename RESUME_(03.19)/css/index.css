@@ -1,0 +1,278 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&family=Schoolbell&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@600&display=swap');
+
+
+.row { max-width:1170px; 
+    margin:0 auto;
+}
+/* {font-family: 'Rubik Mono One', sans-serif;} */
+body {font-family: 'Krona One', sans-serif;/*font-family: 'Schoolbell', cursive;*/}
+
+/* header h1
+{ position: fixed; font-size: 33px; background:url(../img/head.jpg)no-repeat; background-size: cover;  color: #000;
+text-align: center; padding: 30px; z-index: 99999; } */
+
+
+header {position: fixed; top: 50%; left: 0;   z-index: 999; transform:translateY(-50%) }
+header .nav li  {padding: 15px 30px;   
+color: #fff ; text-shadow:  0 0 1px #000;   
+font-size: 14px; 
+height: 100x; position: relative; transition: all 0.3s; }
+
+header .nav li.on  {color:#000;
+}
+header .nav li:nth-child(1).on  {color:rgb(112, 112, 112); font-size: 28px;  text-shadow:  0 0 1px rgb(197, 197, 197);
+}
+header .nav li:nth-child(6),
+header .nav li:nth-child(7),
+header .nav li:nth-child(8) {
+    color: rgb(255, 123, 0); display: inline; padding-right: 5px;  text-shadow: none;
+}
+header .nav li:nth-child(6).on,
+header .nav li:nth-child(7).on,
+header .nav li:nth-child(8).on {
+   display: inline; padding-right: 5px; text-shadow: none; font-size: 20px;
+}
+header .nav li:nth-child(6):hover {font-size: 20px;}
+header .nav li:nth-child(7):hover {font-size: 20px;}
+header .nav li:nth-child(8):hover {font-size: 20px;}
+
+
+
+/* header .nav i {opacity: 0;transition: all 0.4s;}
+header .nav li:hover i  {opacity: 1; transition: all 0.4s;}
+header .nav li:hover  span {opacity: 0;transition: all 0.4s;} */
+header .nav .navzoom {display: none;}
+
+header .nav li:hover .navzoom {display: inline-block;}
+
+
+
+
+
+/* 공통클레스 */
+/* .sectionbg  {background:#eeecdf ;} */
+.sectionbg  {overflow:hidden }
+.section1 {height: 100vh;}
+.section1,
+.section2,
+.section3,
+.section4,
+.section5{background:#fff; 
+height: 100vh;}
+h2 {font-size: 30px; 
+    display: inline-block;
+    border-bottom: 5px solid rgba(255, 123, 0, 0.2);
+margin-bottom: 50px; margin-top: 20px;  color:rgb(0, 0, 59);   padding-top: 38px;
+padding-left:200px; }
+/* line-height: -1.5;}   */
+
+
+h2:nth-child(2) {width: 170px;} 
+
+h2:nth-child(4) {width: 160px;}  
+h2:nth-child(5) {width: 235px; }  
+
+
+
+/* home구역 */ 
+#home {position: relative;}
+#home .hbox {height: 100%; width: 100%; background: orange ;
+
+position: absolute; left: 25%; transform: skewX(25deg);}
+#home .htxt {color: #fff; font-size: 80px;  
+    position: absolute; top: 40%; left: 5%; text-shadow: 5px 5px 1px rgb(241, 130, 115);}
+
+
+
+/* .mainslide  {max-width:900px;   margin:auto;  padding-top: 50px;}
+.slide_group {}
+.section1 .slide_group .slide1 { background:url(../img/slide1.jpg) no-repeat center;
+    background-size: cover;  height: 500px; border-radius: 18px; position: relative; }
+.section1 .slide_group .slide2 { background:url(../img/slide2.jpg) no-repeat center;
+        background-size: cover;  height: 500px;   border-radius: 18px; position: relative; }
+.section1 .slide_group .slide3 { background:url(../img/slide3.jpg) no-repeat center;
+    background-size: cover; height: 500px;  border-radius: 18px;  position: relative; }
+
+
+    .slide_group .text {position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);
+    font-size: 50px; color: #fff;}
+
+.slide_group {position: relative;}
+.slide_group .slick-arrow {position: absolute; top: 50%; transform: translateY(-50%);
+font-size: 50px; background: none; color:#07012b; z-index: 9999;}
+.slide_group .prev{left: -50px;}
+.slide_group .next{right: -50px;}
+.slide_group .slick-dots {
+    position: absolute; bottom: 0; left: 50%; transform: translate(-50%);}
+.slide_group .slick-dots li { float: left; margin-right: 20px;  }
+.slide_group .slick-dots li button {color: transparent; 
+    background: #fff; border-radius: 50%; width: 5px; height: 5px;}
+.slide_group .slick-dots li.slick-active button 
+{background: rgb(49, 46, 228);} */
+
+
+     
+
+
+/* 어바웃미 구역 */
+.section2 h2 {position: relative;
+     /* padding-left: 30%; */
+    }
+.section2 h2::after{content: ''; position: absolute; top: 100%; right: 0;
+    width: 5px; height: 30px; background: rgb(0, 0, 59);}
+.section2 .mequ {position: relative;}
+/* .section2 .me {font-size: 200px;  text-align: right; 
+color: #333; border-radius: 50%;  width: 35%; }  */
+.section2 .me { 
+    /* background: url(../img/me.jpeg) no-repeat;
+    background-size: auto;  */
+    width: 40%;  overflow: hidden;
+ height:700px;   } 
+.section2 .quote { font-family: 'Noto Sans JP', sans-serif; 
+    font-size: 100px; color: rgba(255, 123, 0, 0.1);
+     position: absolute; top: 0; right: 0%; width: 60%; line-height: 0; 
+     transform: skewX(10deg); margin-top: 100px;} 
+.section2 .qu {animation: bounce 4s infinite ;}
+.section2 .quote span {font-size: 50px; color: #000; line-height: -2;}
+.section2 .quote span a {font-size: 30px;  opacity: 0.5;}
+.section2 .quote .meinfo {font-size: 20px;transform: skewX(-10deg); line-height: 1.5;
+margin-top: 80px; color: gray;}
+
+
+
+
+
+
+
+
+/* skills 구역 */
+
+
+/* #skills h2 { padding-left: 200px;} */
+/* #skills h2 >div {width: 500px; position: relative;} */
+.skillcont > div {font-size: 20px; margin-bottom: 25px; }
+
+#skills .skillcont {width: auto;  margin: 50px auto;}
+#skills .skillcont .graph > div { margin: 30px 0; position: relative; margin-right:5%;
+    /* background-color: #e2f5f7; */
+   float: left; width: 40%;}
+ 
+#skills .skillcont .graph div h4 {font-size: 30px; font-family: 'Rubik', sans-serif;}
+
+
+#skills .skillcont .html {width: 0%; color: #000; background-color: #ea642a;
+    border-radius: 5px; border-bottom: 2px solid rgb(126, 126, 126); }
+#skills .skillcont.on .html {
+    animation: htmlani 0.8s both 0.4s;}
+
+#skills .skillcont .css {width: 0%; color: #000; background: #2fa4d5;
+    border-radius: 5px; border-bottom: 2px solid rgb(126, 126, 126);}
+#skills .skillcont.on .css {
+        animation: cssani 0.6s both 0.3s; }
+
+
+#skills .skillcont .script {width: 0%; color: #000;background: #efd81d;
+    border-radius: 5px; border-bottom: 2px solid rgb(126, 126, 126); } 
+ #skills .skillcont.on .script {
+        animation: scriptani 0.8s both 0.3s;} 
+
+#skills .skillcont .jquery {width: 0%; color: #fff; background: #1d2d39;
+    border-radius: 5px; border-bottom: 2px solid rgb(126, 126, 126);
+   }
+    #skills .skillcont.on .jquery {
+        animation: jqueryani 0.8s both 0.3s;}
+
+#skills .skillcont .illustration {width: 0%; color: #e66c1d;
+    border-radius: 5px; border-bottom: 2px solid rgb(126, 126, 126); background:#faf7dd ;
+   }
+    #skills .skillcont.on .illustration {
+        animation: illustrationani 1s both 0.5s;}
+
+#skills .skillcont .photoshop {color: #089cbd; background: #c8f8f5;
+    border-bottom: 2px solid rgb(126, 126, 126);border-radius: 5px; }
+    #skills .skillcont.on .photoshop {
+        animation: photoshopani 1s both 0.4s;}
+
+#skills .skillcont strong {color: #000;}
+#skills .skillcont .jquery strong {color: rgb(180, 180, 180);}
+
+@keyframes htmlani {0%{width: 0%; opacity: 0;}
+                    100% {width: 80%; opacity: 1;}}
+@keyframes cssani {0%{width: 0%; opacity: 0;}
+                    100% {width: 75%; opacity: 1;}}
+@keyframes scriptani {0%{width: 0%; opacity: 0;}
+                    100% {width: 50%; opacity: 1;}}
+@keyframes jqueryani {0%{width: 0%; opacity: 0;}
+                    100% {width: 65%; opacity: 1;}}
+@keyframes illustrationani {0%{width: 0%; opacity: 0;}
+                    100% {width: 90%; opacity: 1;}}
+@keyframes photoshopani {0%{width: 0%; opacity: 0;}
+                    100% {width: 80%; opacity: 1;}}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 포트폴리오 구역 */
+/* #PORTFOLIO ul li {background: url(../img/EyeOnDesign_20170830_Magazine-Erotica-08-2.png);
+width: 200px; z-index: 999;} */
+/* #works h2 { padding-left: 200px;} */
+#works ul  {position: relative; } 
+#works ul li {width: 40%; height: 250px; float: left; margin-right: 10%;
+    margin-bottom: 30px;   border-radius: 10px; box-shadow: 3px 3px 8px } 
+#works ul li:hover {animation: pulse 0.5s both;}
+#works ul li:nth-child(1) {background-image: url(../img/pofo1.png);
+    background-repeat:  no-repeat ;
+    background-position:  center;
+    background-size: cover;}
+    #works ul li:nth-child(2) {background: url(../img/pofol2.png) no-repeat center;
+        background-size: cover; margin-right: 0;}
+    #works ul li:nth-child(3) {background: url(../img/pofol3.png) no-repeat center;
+    background-size: cover;}
+    #works ul li:nth-child(4) {background: url(../img/pofol4.png) no-repeat center;
+        background-size: cover;  margin-right: 0;}
+
+        
+    
+
+
+
+
+
+
+
+/* contact me 구역 */
+
+/* .section5 h2 { padding-left: 200px;} */
+.section5 .condox {width: 500px; border: 1px solid #000;} 
+.section5 form { margin: 50px 0 0; padding: 30px;
+width: 75%; background: #e2f5f7; background-image: url(../img/line.png); 
+border: 0.5px solid #000;  position: relative; }
+.section5 form label {width: 200px; font-family: 'Noto Sans JP', sans-serif; 
+    display: inline-block; font-size: 20px; padding-left: 20px;}
+    
+.section5 form input { height: 40px; background: #fff; width: 250px; padding: 10px;}
+.section5 form p {padding-bottom: 30px;}
+.section5 form #memo {
+    height: 150px; vertical-align: top; width: 250px; }
+.section5 button {padding: 8px 20px; font-size: 20px; font-family: 'Schoolbell', cursive;
+border-radius: 5px; background: transparent; border: 2px dotted   #07012b; margin-top: 50px; margin-right: 20px; 
+ } 
+.section5 button:hover {background: rgb(243, 197, 112);}
+.section5 button[type=reset]:hover {background: rgb(241, 130, 115);} 
+.section5 .btn {position: absolute; top: 0; right: 10%;}
